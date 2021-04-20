@@ -12,14 +12,13 @@
     <main>
         <% quotes.forEach((quote) => { %>
             <section>
-                <p>
-                    <%= quote.quote %>
-                </p>
+                <img src=<%=quote.image %>>
                 <p>
                     <%= quote.character %>
                 </p>
-
-                <img src=<%=quote.image %>>
+                <p>
+                    <%= quote.quote %>
+                </p>
 
                 <p>
                     <%= quote.characterDirection %>
