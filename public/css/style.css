@@ -18,6 +18,7 @@ img {
 }
 
 section {
+    background-color: rgb(31, 170, 170);
     text-align: center;
     width: 300px;
     height: 650px;
