@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../layout/head') %>
+</head>
+
+<body>
+    <header>
+        <%- include('../layout/header') %>
+    </header>
+    <main>
+        <% quotes.forEach((quote) => { %>
+            <section>
+                <img src=<%=quote.image %>>
+                <p>
+                    <%= quote.character %>
+                </p>
+                <p>
+                    <%= quote.quote %>
+                </p>
+                <p>
+                    <%= quote.characterDirection %>
+                </p>
+                <a href="/favorite-quotes/<%=quote.id %>">view details</a>
+            </section>
+            <% }) %>
+    </main>
+    <footer>
+        <%- include('../layout/footer') %>
+    </footer>
+</body>
+
+</html>
