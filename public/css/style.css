@@ -7,3 +7,7 @@ main {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+body {
+    background-color: aqua;
+}
